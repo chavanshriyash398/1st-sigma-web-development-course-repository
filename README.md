@@ -1,1 +1,0 @@
-# 1st-sigma-web-development-course-repository
