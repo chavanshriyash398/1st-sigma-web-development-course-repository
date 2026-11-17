@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIZING</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html{
+        font-size: 12px;
+        }
+
+        .red{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw; 
+            height: 10vh;
+            /* <!-- vh=view height --> */
+            margin: auto;
+            background-color: aqua;
+        }
+        .blue{
+             box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw; 
+            height:80%;
+            /* <!-- vh=view height --> */
+            margin: auto;
+            background-color: aqua;
+            font-size: 16px;
+            min-height: 40vh;
+            
+        }
+        .blue{
+            font-size: 2rem;/*rem=root elements means html font size multiplication*/
+            /* font-size: 2em;em= means multiplies inherited actual font size ex.= 16px multiplies by 2 */
+        }
+        .container{
+            color: aqua;
+            background-color: brown;
+            width: 100vmin;/*vmin= minimum width or device value ex.=laptop vmin is height,mobile vmin is width*/
+            height: 10vmax;vmax=similar like vmin but maximum value
+        }
+        .blue p {
+            width: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="red"> THIS IS DIV</div>
+    <div class="blue">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis perferendis? Libero minus
+        reiciendis recusandae dolores obcaecati cupiditate architecto maxime placeat non soluta rerum tenetur quae
+        quidem, quo voluptates doloremque culpa perspiciatis repellendus quisquam molestias velit tempore ipsam
+        excepturi eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tempore aliquam hic non ullam. Atque iure quo at hic enim! Vero nam vitae error in.</p></div>
+    
+    <div class="container">
+        this is container
+    </div>    
+</body>
+
+</html>
