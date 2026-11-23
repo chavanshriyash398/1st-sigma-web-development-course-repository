@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            border: 7px solid red;
+            height: 20vh;
+            width: 30vw;
+            overflow: scroll;
+            white-space: nowrap; /*vertically text dont go but horizantally goes*/
+        }
+        .box1{
+            border: 7px solid red;
+            height: 20vh;
+            width: 30vw;
+            overflow: hidden;
+            white-space: nowrap; /*vertically text dont go but horizantally goes*/
+            text-overflow: ellipsis; /*when texts overflows there will br dots */
+        }
+        .box2{
+            border: 7px solid red;
+            height: 20vh;
+            width: 30vw;
+            overflow: hidden auto ; /* 1st hidden is for X-axis and 2nd auto is for Y-axis*/
+            /* white-space: nowrap; vertically text dont go but horizantally goes */
+            text-overflow: ellipsis; /*when texts overflows there will br dots */
+        }
+    </style>
+</head>
+<body>
+    <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officiis facilis quidem. Labore impedit accusamus vel incidunt nisi sint corrupti harum aliquid vitae, autem dolorum voluptas iure, reiciendis adipisci quo veritatis debitis a optio, repellendus unde excepturi! Maxime aperiam quis vel in a numquam odio, ipsa corporis inventore, incidunt perferendis, nulla alias eveniet aut provident?</p>
+    <br>
+    <p class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officiis facilis quidem. Labore impedit accusamus vel incidunt nisi sint corrupti harum aliquid vitae, autem dolorum voluptas iure, reiciendis adipisci quo veritatis debitis a optio, repellendus unde excepturi! Maxime aperiam quis vel in a numquam odio, ipsa corporis inventore, incidunt perferendis, nulla alias eveniet aut provident?</p>
+    <br>
+    <p class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officiis facilis quidem. Labore impedit accusamus vel incidunt nisi sint corrupti harum aliquid vitae, autem dolorum voluptas iure, reiciendis adipisci quo veritatis debitis a optio, repellendus unde excepturi! Maxime aperiam quis vel in a numquam odio, ipsa corporis inventore, incidunt perferendis, nulla alias eveniet aut provident?</p>
+</body>
+</html>
